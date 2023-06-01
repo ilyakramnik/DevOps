@@ -26,4 +26,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: artifact.jar
-          path: target/lab1-1.0-SNAPSHOT.jar
+          path: lab1/target/lab1-1.0-SNAPSHOT.jar
