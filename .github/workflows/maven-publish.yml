@@ -19,7 +19,7 @@ jobs:
           distribution: "temurin"
           cache: maven
       - name: Build project with Maven
-        run: mvn -B package --file pom.xml
+        run: mvn -B package --file lab1/pom.xml
       - name: Upload built artifact
         uses: actions/upload-artifact@v3
         with:
