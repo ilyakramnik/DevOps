@@ -1,5 +1,8 @@
 name: Second Pipeline
 
+env:
+  DOCKER_IMAGE_TAG: yourbro123/firstrep:latest
+
 on:
   push:
     branches: ["main"]
@@ -59,4 +62,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${{ yourbro123/firstrep:latest }}
+        tags: ${{ env.DOCKER_IMAGE_TAG }}
