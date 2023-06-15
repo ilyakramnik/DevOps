@@ -21,12 +21,12 @@ jobs:
       - name: List files in working directory
         run: ls -R
       - name: Build project with Maven
-        run: mvn -B package --file lab1/pom.xml
+        run: mvn -B package --file lab2/pom.xml
       - name: Upload built artifact
         uses: actions/upload-artifact@v3
         with:
           name: artifact.jar
-          path: lab1/target/lab1-1.0-SNAPSHOT.jar
+          path: lab2/target/lab1-1.0-SNAPSHOT.jar
           
   checkstyle:
     runs-on: ubuntu-latest
@@ -46,7 +46,7 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: artifact.jar
-        path: lab1/target/
+        path: lab2/target/
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
     - name: Login to Docker Hub
