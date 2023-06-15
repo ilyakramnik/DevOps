@@ -59,4 +59,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${{ yourbro123/firstrep:latest }}
+        tags: ${{ yourbro123/firstrep }}/clockbox:latest
